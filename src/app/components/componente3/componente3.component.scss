@@ -1,0 +1,154 @@
+header{
+  display: flex;
+  background-color: black;
+  color: white;
+  justify-content: space-between;
+  height: 70px;
+  align-items: center;
+  padding: 10px;
+  text-align: right;
+}
+
+h2{
+  margin-left: 100px;
+}
+
+h1{
+  align-items: center;
+  margin-left: 100px;
+}
+
+.validacion {
+  background-color: #017A42;
+  color: white;
+  margin-top: 40px;
+  margin-left: 100px;
+  padding: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  font-weight: bold;
+}
+
+.validacion::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 0 10px;
+  border-color: transparent transparent transparent transparent;
+  top: 50%;
+  left: -10px;
+  transform: translateY(-50%);
+}
+
+.txt {
+    text-align: center; /* Centrar texto */
+}
+
+.datos {
+  margin-top: 30px;
+  margin-left: 100px;
+  padding-top: 30px;
+  padding-bottom: 70px;
+  width: calc(100% - 200px);
+  max-width: 1336px;
+  height: auto;
+  border: 1px solid lightgray;
+  display: flex;
+  flex-direction: column; /* Cambiado a dirección de columna */
+  justify-content: center; /* Centrado verticalmente */
+  align-items: center; /* Centrado horizontalmente */
+  text-align: center;
+  position: relative;
+}
+
+.imagen-datos {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.nomb {
+  font-weight: normal; /* Quitar negrita */
+  opacity: 0.8;
+}
+
+.curso {
+    color: green; /* Color verde */
+    font-weight: 800; /* Peso de la fuente */
+    text-align: center; /* Centrar texto */
+    line-height: 1.2em; /* Altura de línea equivalente a aproximadamente 3 líneas */
+    font-size: 2em;
+    margin-right: 100px;
+}
+
+.linea-inferior {
+    margin-top: 50px;
+    border-bottom: 1px solid lightgray; /* Borde inferior */
+    width: 80%; /* Ancho completo */
+    height: 10px; /* Altura deseada */
+}
+
+.info{
+    margin-top: 50px;
+    text-align: center; /* Centrar texto */
+}
+
+.codigo-qr {
+    display: block; /* Para centrar horizontalmente */
+    margin: 0 auto; /* Para centrar horizontalmente */
+    margin-top: 5px;
+}
+
+.codigo-qr-container {
+    display: inline-block; /* Para que el contenedor se ajuste al tamaño de su contenido */
+    border-radius: 15px; /* Bordes circulares */
+    border: 1px solid #e0e0e0; /* Borde casi invisible */
+    padding: 5px; /* Espacio interno */
+    margin-top: 30px;
+}
+
+.txtfinal {
+    font-family: sans-serif;
+    margin-top: 20px;
+    text-align: center; /* Centrar texto */
+}
+
+/* Estilos personalizados */
+.celeste {
+    color: #007bff; /* Color celeste */
+}
+
+/* Estilos para centrar la primera imagen */
+.datos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.txt{
+    margin-right: 100px;
+}
+
+@media only screen and (max-width: 768px) {
+    /* Estilos para dispositivos móviles */
+    .nombre {
+        font-size: 1.5em; /* Tamaño de fuente más pequeño */
+    }
+    .curso {
+        font-size: 1.5em; /* Tamaño de fuente más pequeño */
+    }
+    .linea-inferior {
+        width: 90%; /* Ancho más estrecho */
+    }
+    .info {
+        margin-top: 30px; /* Margen superior más pequeño */
+    }
+    .codigo-qr-container {
+        margin-top: 20px; /* Margen superior más pequeño */
+    }
+    .txtfinal {
+        margin-top: 10px; /* Margen superior más pequeño */
+    }
+}

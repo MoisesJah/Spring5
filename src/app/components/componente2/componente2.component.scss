@@ -1,0 +1,167 @@
+body{
+  font-family: sans-serif;
+  margin: 0;
+}
+
+header{
+  display: flex;
+  background-color: black;
+  color: white;
+  justify-content: space-between;
+  height: 70px;
+  align-items: center;
+  padding: 10px;
+  text-align: right;
+}
+
+h2{
+  margin-left: 100px;
+}
+
+h1{
+  align-items: center;
+  margin-left: 100px;
+}
+
+
+.validacion {
+  background-color: #017A42;
+  color: white;
+  margin-top: 40px;
+  margin-left: 100px;
+  padding: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  font-weight: bold;
+}
+
+.validacion::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 0 10px;
+  border-color: transparent transparent transparent transparent;
+  top: 50%;
+  left: -10px;
+  transform: translateY(-50%);
+}
+
+.datos {
+  margin-top: 30px;
+  margin-left: 100px;
+  padding-top: 30px;
+  padding-bottom: 70px;
+  width: calc(100% - 200px);
+  max-width: 1336px;
+  height: auto;
+  border: 1px solid lightgray;
+  display: flex;
+  flex-direction: column; /* Cambiado a dirección de columna */
+  justify-content: center; /* Centrado verticalmente */
+  align-items: center; /* Centrado horizontalmente */
+  text-align: center;
+  position: relative;
+}
+
+.imagen-datos {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.tabla-texto {
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+}
+
+.fila {
+  display: flex;
+}
+
+.cuadro-izquierdo,
+.cuadro-derecho {
+  margin-top: 20px;
+  flex: 1;
+  padding: 10px;
+  border-bottom: 1px solid lightgray;
+}
+
+.cuadro-izquierdo {
+  border-bottom: 1px solid lightgray;
+  font-weight: bold;
+}
+
+.cursos {
+  text-align: left;
+  margin-left: 200px;
+  margin-top: 20px;
+}
+
+.cursos h1 {
+  display: inline-block;
+  position: relative;
+  font-weight: normal;
+}
+
+.cursos h1::before,
+.cursos h1::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: calc(50% - 30px); /* Ajusta el ancho deseado de las líneas */
+  border-bottom: 1px solid lightgray;
+}
+
+.cursos h1::before {
+  right: 100%;
+  margin-right: 20px; /* Ajusta el margen derecho */
+}
+
+.cursos h1::after {
+  left: 100%;
+  margin-left: 20px; /* Ajusta el margen izquierdo */
+}
+
+.datoscursos {
+  margin-top: 30px;
+  margin-left: 100px;
+  padding-top: 30px;
+  padding-bottom: 70px;
+  width: calc(100% - 200px);
+  max-width: 1336px;
+  height: auto;
+  border: 1px solid lightgray;
+  display: flex;
+  flex-direction: column; /* Cambiado a dirección de columna */
+  justify-content: center; /* Centrado verticalmente */
+  align-items: center; /* Centrado horizontalmente */
+  text-align: center;
+  position: relative;
+}
+
+.filacursos {
+  display: flex;
+}
+
+.cursos-izquierdo,
+.cursos-derecho{
+  margin-top: 20px;
+  display: flex;
+  padding: 10px;
+  border-bottom: 1px solid lightgray;
+  margin-left: 30px;
+}
+
+.cursos-izquierdo{
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.cursos-derecho a {
+  text-decoration: none;
+  color: inherit;
+}

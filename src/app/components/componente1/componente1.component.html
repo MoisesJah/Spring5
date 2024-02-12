@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="componente1.component.scss">
+    <title>Promot</title>
+</head>
+<body>
+    <header>
+        <div class="encabezado">
+            <h2 class="nombre">Promot</h2>
+        </div>
+    </header>
+    <main>
+        <h1 class="texto">¡Bienvenido!</h1>
+        <div class="pasos">
+            Para comprobar tu código QR, sigue estos pasos sencillos: <br><br><br>
+
+            1. Haz clic en el botón central para subir tu código QR o tomar una foto. <br>
+            2. Asegúrate de que el código esté bien enfocado dentro de la ventana de la cámara. <br>
+            3. Espera a que se complete el escaneo. <br>
+            4. ¡Listo! Verás la información contenida en tu código QR. <br>
+        </div>
+        <div class="escaner" id="escaner" ondrop="dropHandler(event)" ondragover="dragOverHandler(event)">
+            <img src="https://icon-library.com/images/drag-and-drop-icon/drag-and-drop-icon-8.jpg" alt="Imagen de archivo" class="drop-image">
+            <div class="texto-escaner">
+                Arrastra y suelta aquí tu archivo o <a routerLink="/info" id="fileInputLink">da click aquí</a> para ir a la página de credenciales.
+            </div>
+        </div>
+    </main>
+     <script src="script.js"></script>
+</body>
+</html>
